@@ -20,12 +20,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+
+SECRET_KEY = os.environ.get("SECRET_KEY", "some value if your key is not in the environment")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['outique-ado-ver1.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['boutique-ado-ver1.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -180,7 +181,7 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-    
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'boutique-ado-ver1'
     AWS_S3_REGION_NAME = 'eu-central-1'
