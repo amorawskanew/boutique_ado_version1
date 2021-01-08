@@ -27,8 +27,6 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "some value if your key is not in the 
 DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['boutique-ado-ver1.herokuapp.com', 'localhost']
-ALLOWED_HOSTS = ['ckz8780-boutique-ado.herokuapp.com', 'localhost']
-
 
 
 # Application definition
